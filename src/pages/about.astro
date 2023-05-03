@@ -7,6 +7,7 @@ import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 import Icon from '../components/Icon.astro';
 import Pill from '../components/Pill.astro';
+
 ---
 
 <BaseLayout title="About | Elisa Bertoni" description="About Elisa Bertoni">
@@ -16,6 +17,7 @@ import Pill from '../components/Pill.astro';
 				title="About"
 				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
 			>
+
 				<img
 					width="1553"
 					height="873"
@@ -62,31 +64,33 @@ import Pill from '../components/Pill.astro';
             <Pill><Icon icon="html-icon" size="1.33em" /> HTML5</Pill>
             <Pill><Icon icon="css-icon" size="1.33em" /> CSS3</Pill>
             <Pill><Icon icon="javascript-icon" size="1.33em" /> JavaScript</Pill>
-            <Pill>Typescript</Pill>
+            <Pill><Icon icon="typescript-icon" size="1.33em" /> TypeScript</Pill>
+            <!-- <Pill><IconAstro name="bxl:typescript" size="1.33em" /> TypeScript</Pill> -->
             <Pill><Icon icon="git-icon" size="1.33em" /> Git</Pill>
             <Pill><Icon icon="react-icon" size="1.33em" /> React</Pill>
-            <Pill><Icon icon='redux-icon'/>Redux</Pill>
-            <Pill>Express</Pill>
-            <Pill>Knex</Pill>
-            <Pill>SQLite3</Pill>
-            <Pill>RESTful API</Pill>
-            <Pill>Insomnia REST</Pill>
-            <Pill>Auth0</Pill>
-            <Pill>Bulma CSS</Pill>
-            <Pill>Tailwind CSS</Pill>					
+            <Pill><Icon icon='redux-icon' size="1.33em" />Redux</Pill>
+            <Pill><Icon icon='express-icon' size="1.33em" />Express</Pill>
+            <Pill><Icon icon='knex-icon' size="1.33em" />Knex</Pill>
+            <Pill><Icon icon='sqlite-icon' size="1.33em" />SQLite3</Pill>
+            <Pill><Icon icon='insomnia-icon' size="1.33em" />Insomnia</Pill>
+            <Pill><Icon icon='auth0-icon' size="1.33em" />Auth0</Pill>
+            <Pill><Icon icon='bulma-icon' size="1.33em" />Bulma CSS</Pill>
+            <Pill><Icon icon='tailwind-icon' size="1.33em" />Tailwind CSS</Pill>				
 					</div>
 				</div>
 			</section>
       <section>
-				<h2 class="section-title">Hobbies</h2>
+				<h2 class="section-title">Interests</h2>
 				<div class="tech-list-container">
 					<div class="tech-icon">
+            <Pill><Icon icon="food" size="1.33em" /></Pill>
             <Pill><Icon icon="burger" size="1.33em" /></Pill>
             <Pill><Icon icon="wine-glass" size="1.33em" /></Pill>
             <Pill><Icon icon="dog" size="1.33em" /></Pill>
             <Pill><Icon icon="globe" size="1.33em" /></Pill>
             <Pill><Icon icon="beach" size="1.33em" /></Pill>
             <Pill><Icon icon="puzzle" size="1.33em" /> </Pill>
+            <Pill><Icon icon="cards" size="1.33em" /></Pill>
             <Pill><Icon icon="bike" size="1.33em" /></Pill>
 					</div>
 				</div>
@@ -130,6 +134,11 @@ import Pill from '../components/Pill.astro';
 
   .content p {
     padding-bottom: 10px;
+  }
+
+  .container-cv {
+    display: flex;
+    justify-content: center;
   }
 
   .tech-list-container {
