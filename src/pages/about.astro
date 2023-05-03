@@ -7,7 +7,7 @@ import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 import Icon from '../components/Icon.astro';
 import Pill from '../components/Pill.astro';
-
+import cv from '/assets/cv/elisa-cv-2may23.pdf'
 ---
 
 <BaseLayout title="About | Elisa Bertoni" description="About Elisa Bertoni">
@@ -17,7 +17,11 @@ import Pill from '../components/Pill.astro';
 				title="About"
 				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
 			>
-
+      <section>
+				<div class="container-cv">
+            <a href={cv} download="elisa-bertoni-cv"><Pill><Icon icon="cv-logo" size="1.33em" />Download my CV</Pill></a>
+				</div>
+			</section>
 				<img
 					width="1553"
 					height="873"
