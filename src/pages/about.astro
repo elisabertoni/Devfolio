@@ -5,7 +5,7 @@ import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 ---
 
-<BaseLayout title="About | Elisa Bertoni" description="About Elisa Bertoni Lorem Ipsum">
+<BaseLayout title="About | Elisa Bertoni" description="About Elisa Bertoni">
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
@@ -24,22 +24,22 @@ import Hero from '../components/Hero.astro';
 				<h2 class="section-title">Background</h2>
 				<div class="content">
 					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
-					</p>
-					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
-					</p>
-					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
+						I am a full stack software developer with a background in customer service. I have recently completed an intensive 
+            17-week bootcamp in full stack web development with Dev Academy Aotearoa.
+          </p>
+          <p>
+            My professional and personal interests have led me to enjoy a 10-year career 
+            in the hospitality industry in several countries around the world. 
+          </p>
+          <p>
+            Thanks to my previous jobs I have developed <b>strong organisation skills</b>, 
+            impeccable <b>customer service</b> and a <b>keen eye for detail</b>. Working very closely 
+            with hospitality and stock management software made me realise how much I love 
+            tech.
+          </p>            
+          <p>
+            I got really invested in coding last year ago while completing a one-year diploma in Information Systems. 
+            And that is why I ended up studying at Dev Academy.
 					</p>
 				</div>
 			</section>
@@ -50,7 +50,7 @@ import Hero from '../components/Hero.astro';
 				</div>
 			</section>
 			<section>
-				<h2 class="section-title">Skills</h2>
+				<h2 class="section-title">Tech Skills</h2>
 				<div class="content">
 					<p>officia unde omnis</p>
 				</div>
@@ -89,7 +89,12 @@ import Hero from '../components/Hero.astro';
 
 	.content {
 		grid-column: 2 / 4;
+    text-align: justify;
 	}
+
+  .content p {
+    padding-bottom: 10px;
+  }
 
 	.content :global(a) {
 		text-decoration: 1px solid underline transparent;
