@@ -3,6 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
+import Icon from '../components/Icon.astro';
+import Pill from '../components/Pill.astro';
 ---
 
 <BaseLayout title="About | Elisa Bertoni" description="About Elisa Bertoni">
@@ -24,12 +26,12 @@ import Hero from '../components/Hero.astro';
 				<h2 class="section-title">Background</h2>
 				<div class="content">
 					<p>
-						I am a full stack software developer with a background in customer service. I have recently completed an intensive 
+						I am a full stack software developer with a background in <b>customer service</b>. I have recently completed an intensive 
             17-week bootcamp in full stack web development with Dev Academy Aotearoa.
           </p>
           <p>
-            My professional and personal interests have led me to enjoy a 10-year career 
-            in the hospitality industry in several countries around the world. 
+            My professional and personal interests have led me to enjoy a <b>10-year career</b> 
+            in the <b>hospitality industry</b> in several countries around the world. 
           </p>
           <p>
             Thanks to my previous jobs I have developed <b>strong organisation skills</b>, 
@@ -46,15 +48,12 @@ import Hero from '../components/Hero.astro';
 			<section>
 				<h2 class="section-title">Education</h2>
 				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
+					<p>Certificate in Applied Software Development &nbsp-&nbsp <em>Dev Academy Aotearoa</em></p>
+          <p>Diploma in Information Systems &nbsp-&nbsp <em>Eastern Institute of Technology</em></p>
+          <p>Bachelor's degree in Tourism, Geography and Environmental Sciences &nbsp-&nbsp <em>University of Milan</em></p>
 				</div>
 			</section>
-			<section>
-				<h2 class="section-title">Tech Skills</h2>
-				<div class="content">
-					<p>officia unde omnis</p>
-				</div>
-			</section>
+			
 		</main>
 
 		<ContactCTA />
@@ -95,6 +94,18 @@ import Hero from '../components/Hero.astro';
   .content p {
     padding-bottom: 10px;
   }
+
+  .tech-list-container {
+    display: flex;
+    grid-column: 2 / 4;
+  }
+
+  .tech-icon {
+    display: flex;
+    flex-wrap: wrap;
+		flex-direction: row;
+		gap: 1rem;
+	}
 
 	.content :global(a) {
 		text-decoration: 1px solid underline transparent;
