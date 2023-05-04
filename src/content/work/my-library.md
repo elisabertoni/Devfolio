@@ -19,9 +19,9 @@ tags:
   - SCSS
 ---
 
-As part of an assignment for the Dev Academy bootcamp, I had to develop a full-stack project using most of the technologies learnt in class. 
+As part of an assignment for Dev Academy bootcamp, I had to develop a full-stack project using most of the technologies learnt in class. 
 
-This was my first solo full-stack app and also includes unit testing covering over 80% of functions in the repository. Testing was definitely the most challenging part of the project!
+This was my first solo full-stack app and includes unit testing covering over 80% of functions in the repository. Testing was definitely the most challenging part of the project!
 
 Technology used:
 - React and Redux for state management 
