@@ -1,14 +1,22 @@
 ---
-title: Markdown Mystery Tour
+title: Gallerina
 publishDate: 2020-03-02 00:00:00
-img: /assets/stock-1.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
+img: /assets/stock-1.png
+img_alt: Gallerina homepage
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  We developed an art curation website which allows a user to create their own idyllic collections of some of the most famous art pieces in the world. 
 tags:
-  - Design
-  - Dev
-  - User Testing
+  - Full Stack
+  - Javascript
+  - Typescript
+  - Express
+  - Node.js
+  - React
+  - Redux
+  - Knex
+  - SQLite3
+  - External APIs
+  - Tailwind CSS
 ---
 
 ## Level-two heading
