@@ -19,7 +19,7 @@ import cv from '/assets/cv/elisa-bertoni-cv.pdf'
 			>
       <section>
 				<div class="container-cv">
-            <a href={cv} download="elisa-bertoni-cv"><Pill><Icon icon="cv-logo" size="1.33em" />Download my CV</Pill></a>
+            <a href={cv} download="elisa-bertoni-cv"><Icon icon="cv-logo" size="1.33em" />Download my CV</a>
 				</div>
 			</section>
 				<img
@@ -69,7 +69,6 @@ import cv from '/assets/cv/elisa-bertoni-cv.pdf'
             <Pill><Icon icon="css-icon" size="1.33em" /> CSS3</Pill>
             <Pill><Icon icon="javascript-icon" size="1.33em" /> JavaScript</Pill>
             <Pill><Icon icon="typescript-icon" size="1.33em" /> TypeScript</Pill>
-            <!-- <Pill><IconAstro name="bxl:typescript" size="1.33em" /> TypeScript</Pill> -->
             <Pill><Icon icon="git-icon" size="1.33em" /> Git</Pill>
             <Pill><Icon icon="react-icon" size="1.33em" /> React</Pill>
             <Pill><Icon icon='redux-icon' size="1.33em" />Redux</Pill>
@@ -145,6 +144,39 @@ import cv from '/assets/cv/elisa-bertoni-cv.pdf'
     justify-content: center;
   }
 
+  a {
+    position: relative;
+		display: flex;
+		place-content: center;
+		text-align: center;
+		padding: 0.56em 2em;
+		gap: 0.8em;
+		color: var(--accent-text-over);
+		text-decoration: none;
+		line-height: 1.1;
+		border-radius: 999rem;
+		overflow: hidden;
+		background: var(--gradient-accent-orange);
+		box-shadow: var(--shadow-md);
+		white-space: nowrap;
+  }
+
+	/* Overlay for hover effects. */
+	a::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		transition: background-color var(--theme-transition);
+		mix-blend-mode: overlay;
+	}
+
+	a:focus::after,
+  a:hover::after {
+		background-color: hsla(var(--gray-999-basis), 0.3);
+	}
+
+
   .tech-list-container {
     display: flex;
     grid-column: 2 / 4;
@@ -167,7 +199,12 @@ import cv from '/assets/cv/elisa-bertoni-cv.pdf'
 	.content :global(a:focus) {
 		text-decoration-color: currentColor;
 	}
-
+  
+  @media (min-width: 20em) {
+		a {
+			font-size: var(--text-lg);
+		}
+	}
 	@media (min-width: 50em) {
 		.about {
 			display: grid;
@@ -183,4 +220,5 @@ import cv from '/assets/cv/elisa-bertoni-cv.pdf'
 			font-size: var(--text-lg);
 		}
 	}
+
 </style>
