@@ -36,7 +36,7 @@ The external API was very difficult to deal with. We also run out of time and di
 Gallerina hasn't been deployed yet but the source code can be found [here](https://github.com/tohora-2023/Gallerina).
 
 
-<!-- ## Level-two heading
+## Level-two heading
 
 > Tell me and I forget. Teach me and I remember. Involve me and I learn.
 
@@ -50,4 +50,4 @@ Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra al
 #### Level-four heading
 
 - We noted this
-- And also this other point -->
+- And also this other point

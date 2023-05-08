@@ -19,17 +19,17 @@ tags:
   - SCSS
 ---
 
-As part of an assignment for Dev Academy bootcamp, I had to develop a full-stack project using most of the technologies learnt in class. 
+As part of an assignment for the Dev Academy bootcamp, I developed a full-stack project using most of the technologies learned in class. 
 
-This was my first solo full-stack app and includes unit testing covering over 80% of functions in the repository. Testing was definitely the most challenging part of the project!
+This was my first solo full-stack app, and it includes **unit testing** covering over 80% of the functions in the repository. Testing was definitely the most challenging part of the project!
 
-Technology used:
-- React and Redux for state management 
-- Knex for SQLite3 query builder
-- SQLite3 for database development and production
-- Jest for testing
-- Bulma for styling
-- Dokku for deployment
+**Stack used includes:**
+- *React* and *Redux* for state management 
+- *Knex* as SQLite3 query builder
+- *SQLite3* for database development and production
+- *Jest* for testing
+- *Bulma* for styling
+- *Dokku* for deployment
 
-The website was then deployed using Dokku and can be found [here](https://elisa-fullstack-book-collection.devacademy.nz/). For the GitHub repo click [here](https://github.com/elisabertoni/my-library).
+The website was then deployed using Dokku and can be found [here](https://elisa-fullstack-book-collection.devacademy.nz/). For the GitHub source code click [here](https://github.com/elisabertoni/my-library).
 
